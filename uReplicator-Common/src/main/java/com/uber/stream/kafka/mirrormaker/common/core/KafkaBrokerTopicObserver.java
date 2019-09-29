@@ -47,8 +47,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class KafkaBrokerTopicObserver implements IZkChildListener {
 
-  private static final Logger LOGGER =
-      LoggerFactory.getLogger(KafkaBrokerTopicObserver.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(KafkaBrokerTopicObserver.class);
 
   private final static String KAFKA_TOPICS_PATH = "/brokers/topics";
   private final static Set<String> KAFKA_INNER_TOPICS = ImmutableSet.of("__consumer_offsets", "__transaction_state");
